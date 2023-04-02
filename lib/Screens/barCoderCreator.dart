@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/Screens/Scanner.dart';
 import 'package:myapp/Screens/barCodeScanner.dart';
 import 'package:myapp/main.dart';
+import 'package:myapp/sign-in-sign-up/userdata.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class barCodeCreate extends StatefulWidget {
@@ -24,16 +25,6 @@ class _barCodeCreateState extends State<barCodeCreate> {
 
               Padding(
                 padding: EdgeInsets.all(35),
-                // child: Container(
-                //   decoration: BoxDecoration(border: Border.all()),
-                //   child: TextFormField(
-                //     controller: title,
-                //     textAlign: TextAlign.center,
-                //     decoration: InputDecoration(
-                //       hintText: ' Enter The Details ',
-                //     ),
-                //   ),
-                // ),
               ),
               Padding(
                 padding: EdgeInsets.all(35),
@@ -71,7 +62,7 @@ class _barCodeCreateState extends State<barCodeCreate> {
                 onPressed: () {
                   Navigator.push(
   context,
-  MaterialPageRoute(builder: (context) => QrGeneratorPage()),
+  MaterialPageRoute(builder: (context) => HospitalPage()),
 );
 
                 },

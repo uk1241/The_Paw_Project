@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/Screens/barCoderCreator.dart';
 import 'package:myapp/sign-in-sign-up/login.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/sign-in-sign-up/login-kKa.dart';
@@ -50,7 +51,7 @@ class NewWidget extends StatelessWidget {
           future: widget._initializeFirebase(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
-              return SignUp();
+              return barCodeCreate();
             }
             return const Center(
               child: CircularProgressIndicator(),
