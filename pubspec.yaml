@@ -1,0 +1,748 @@
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^3.0.1
+  # barcode_widget: ^2.0.3
+  http: ^0.13.3
+  mysql1: ^0.19.0-nullsafety
+  flutter_barcode_scanner: ^2.0.0
+  qr_flutter: ^4.0.0
+  qr_code_scanner: ^0.4.0
+  camera: ^0.9.4+5
+  barcode_scan: ^3.0.1
+  firebase_auth: ^4.3.0
+  firebase_core: ^2.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/resort-booking-app-design/images/iphone-x-or-newer.png
+    - assets/resort-booking-app-design/images/star.png
+    - assets/resort-booking-app-design/images/notch.png
+    - assets/resort-booking-app-design/images/group-289.png
+    - assets/resort-booking-app-design/images/star-Nme.png
+    - assets/resort-booking-app-design/images/vector.png
+    - assets/resort-booking-app-design/images/group.png
+    - assets/resort-booking-app-design/images/group-228.png
+    - assets/resort-booking-app-design/images/vector-XxC.png
+    - assets/resort-booking-app-design/images/vector-AH6.png
+    - assets/resort-booking-app-design/images/star-zhE.png
+    - assets/resort-booking-app-design/images/star-b9A.png
+    - assets/resort-booking-app-design/images/group-289-6yn.png
+    - assets/resort-booking-app-design/images/fav.png
+    - assets/resort-booking-app-design/images/layerx00201.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass.png
+    - assets/resort-booking-app-design/images/vector-FCt.png
+    - assets/resort-booking-app-design/images/group-282.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Svk.png
+    - assets/resort-booking-app-design/images/fav-GU8.png
+    - assets/resort-booking-app-design/images/star-2.png
+    - assets/resort-booking-app-design/images/datingscout-jtumzxloqhq-unsplash-2.png
+    - assets/resort-booking-app-design/images/location-icon.png
+    - assets/resort-booking-app-design/images/star-s4U.png
+    - assets/resort-booking-app-design/images/ribbon.png
+    - assets/resort-booking-app-design/images/vector-a2k.png
+    - assets/resort-booking-app-design/images/fav-cwz.png
+    - assets/resort-booking-app-design/images/ribbon-89e.png
+    - assets/resort-booking-app-design/images/star-5.png
+    - assets/resort-booking-app-design/images/group-280.png
+    - assets/resort-booking-app-design/images/wifi.png
+    - assets/resort-booking-app-design/images/star-1.png
+    - assets/resort-booking-app-design/images/star-3.png
+    - assets/resort-booking-app-design/images/icon-chevronleft.png
+    - assets/resort-booking-app-design/images/star-1-AWk.png
+    - assets/resort-booking-app-design/images/star-3-6vC.png
+    - assets/resort-booking-app-design/images/group-228-dDJ.png
+    - assets/resort-booking-app-design/images/group-215.png
+    - assets/resort-booking-app-design/images/group-wzg.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-ETz.png
+    - assets/resort-booking-app-design/images/pool.png
+    - assets/resort-booking-app-design/images/fav-NaC.png
+    - assets/resort-booking-app-design/images/group-278.png
+    - assets/resort-booking-app-design/images/fav-8bJ.png
+    - assets/resort-booking-app-design/images/paytm.png
+    - assets/resort-booking-app-design/images/layerx00201-aRE.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Bq2.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-iKA.png
+    - assets/resort-booking-app-design/images/group-289-GLg.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-dBE.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-FB6.png
+    - assets/resort-booking-app-design/images/group-BKe.png
+    - assets/resort-booking-app-design/images/notch-91a.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-3ck.png
+    - assets/resort-booking-app-design/images/fav-o68.png
+    - assets/resort-booking-app-design/images/group-285.png
+    - assets/resort-booking-app-design/images/fav-g9v.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-cpG.png
+    - assets/resort-booking-app-design/images/star-2-7Ag.png
+    - assets/resort-booking-app-design/images/fav-GZN.png
+    - assets/resort-booking-app-design/images/group-289-q6g.png
+    - assets/resort-booking-app-design/images/vector-MNp.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-UTS.png
+    - assets/resort-booking-app-design/images/group-284.png
+    - assets/resort-booking-app-design/images/star-3-Xjn.png
+    - assets/resort-booking-app-design/images/star-1-MVA.png
+    - assets/resort-booking-app-design/images/star-3-uma.png
+    - assets/resort-booking-app-design/images/pool-6oS.png
+    - assets/resort-booking-app-design/images/group-238.png
+    - assets/resort-booking-app-design/images/star-4.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-4FS.png
+    - assets/resort-booking-app-design/images/auto-group-onek.png
+    - assets/resort-booking-app-design/images/star-5-7WY.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-Fse.png
+    - assets/resort-booking-app-design/images/icon-microphone.png
+    - assets/resort-booking-app-design/images/vector-BFW.png
+    - assets/resort-booking-app-design/images/group-8wS.png
+    - assets/resort-booking-app-design/images/group-228-qgk.png
+    - assets/resort-booking-app-design/images/group-228-bR2.png
+    - assets/resort-booking-app-design/images/group-239.png
+    - assets/resort-booking-app-design/images/star-UUp.png
+    - assets/resort-booking-app-design/images/group-228-qKN.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-ywN.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-95A.png
+    - assets/resort-booking-app-design/images/notch-uKE.png
+    - assets/resort-booking-app-design/images/icon-microphone-Zc4.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-K5S.png
+    - assets/resort-booking-app-design/images/star-4-u2g.png
+    - assets/resort-booking-app-design/images/group-228-D3N.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-wzx.png
+    - assets/resort-booking-app-design/images/ribbon-uRz.png
+    - assets/resort-booking-app-design/images/icon-microphone-Nfr.png
+    - assets/resort-booking-app-design/images/vector-K5J.png
+    - assets/resort-booking-app-design/images/star-4-GWL.png
+    - assets/resort-booking-app-design/images/ribbon-dbn.png
+    - assets/resort-booking-app-design/images/group-nzU.png
+    - assets/resort-booking-app-design/images/food.png
+    - assets/resort-booking-app-design/images/icon-microphone-XBN.png
+    - assets/resort-booking-app-design/images/icon-microphone-VoW.png
+    - assets/resort-booking-app-design/images/pool-VKe.png
+    - assets/resort-booking-app-design/images/pool-47r.png
+    - assets/resort-booking-app-design/images/group-239-HCt.png
+    - assets/resort-booking-app-design/images/layerx00201-S5n.png
+    - assets/resort-booking-app-design/images/pool-5bv.png
+    - assets/resort-booking-app-design/images/group-239-qb6.png
+    - assets/resort-booking-app-design/images/vector-roA.png
+    - assets/resort-booking-app-design/images/vector-NWc.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-vHE.png
+    - assets/resort-booking-app-design/images/star-4-ozY.png
+    - assets/resort-booking-app-design/images/wifi-xNt.png
+    - assets/resort-booking-app-design/images/layerx00201-4ba.png
+    - assets/resort-booking-app-design/images/delete.png
+    - assets/resort-booking-app-design/images/fav-gcx.png
+    - assets/resort-booking-app-design/images/dave-hoefler-ufnht94r91w-unsplash-1.png
+    - assets/resort-booking-app-design/images/artie-kostenko-a6ezvpjxfby-unsplash-1-bg.png
+    - assets/resort-booking-app-design/images/zero-take-wvhrrr1c5po-unsplash-1.png
+    - assets/resort-booking-app-design/images/fabio-fistarol-qaiclhyq0s-unsplash-1.png
+    - assets/resort-booking-app-design/images/datingscout-jtumzxloqhq-unsplash-1.png
+    - assets/resort-booking-app-design/images/star-4-nT2.png
+    - assets/resort-booking-app-design/images/star-3-bFN.png
+    - assets/resort-booking-app-design/images/group-239-et8.png
+    - assets/resort-booking-app-design/images/star-2-g64.png
+    - assets/resort-booking-app-design/images/cory-bjork-d1yt791nf9a-unsplash-1.png
+    - assets/resort-booking-app-design/images/star-1-QDe.png
+    - assets/resort-booking-app-design/images/star-2-igp.png
+    - assets/resort-booking-app-design/images/iraj-ishtiak-xwlcehbqoz8-unsplash-1.png
+    - assets/resort-booking-app-design/images/sasha-kaunas-67-soi7mvik-unsplash-1.png
+    - assets/resort-booking-app-design/images/group-Rje.png
+    - assets/resort-booking-app-design/images/the-anam-twiicisp2s-unsplash-1.png
+    - assets/resort-booking-app-design/images/star-5-Wpg.png
+    - assets/resort-booking-app-design/images/group-N6k.png
+    - assets/resort-booking-app-design/images/star-5-Qor.png
+    - assets/resort-booking-app-design/images/star-5-xMW.png
+    - assets/resort-booking-app-design/images/icon-microphone-68G.png
+    - assets/resort-booking-app-design/images/star-4-DcC.png
+    - assets/resort-booking-app-design/images/star-5-LZe.png
+    - assets/resort-booking-app-design/images/group-238-feg.png
+    - assets/resort-booking-app-design/images/vector-mt4.png
+    - assets/resort-booking-app-design/images/wifi-qvp.png
+    - assets/resort-booking-app-design/images/vector-GAt.png
+    - assets/resort-booking-app-design/images/box4.png
+    - assets/resort-booking-app-design/images/group-239-CVW.png
+    - assets/resort-booking-app-design/images/star-5-53W.png
+    - assets/resort-booking-app-design/images/pool-EBJ.png
+    - assets/resort-booking-app-design/images/box1.png
+    - assets/resort-booking-app-design/images/star-1-CDE.png
+    - assets/resort-booking-app-design/images/video.png
+    - assets/resort-booking-app-design/images/group-238-Wji.png
+    - assets/resort-booking-app-design/images/fav-5H2.png
+    - assets/resort-booking-app-design/images/fav-oNg.png
+    - assets/resort-booking-app-design/images/star-1-wzg.png
+    - assets/resort-booking-app-design/images/group-238-i1n.png
+    - assets/resort-booking-app-design/images/star-3-sQU.png
+    - assets/resort-booking-app-design/images/group-286.png
+    - assets/resort-booking-app-design/images/box3.png
+    - assets/resort-booking-app-design/images/group-239-v96.png
+    - assets/resort-booking-app-design/images/food-qmr.png
+    - assets/resort-booking-app-design/images/star-1-C6c.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-LTi.png
+    - assets/resort-booking-app-design/images/fav-J9e.png
+    - assets/resort-booking-app-design/images/star-5-fF6.png
+    - assets/resort-booking-app-design/images/wifi-dBv.png
+    - assets/resort-booking-app-design/images/star-2-BjE.png
+    - assets/resort-booking-app-design/images/star-2-KHa.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-3zG.png
+    - assets/resort-booking-app-design/images/star-3-FKe.png
+    - assets/resort-booking-app-design/images/star-4-oc4.png
+    - assets/resort-booking-app-design/images/group-238-xzk.png
+    - assets/resort-booking-app-design/images/percentage.png
+    - assets/resort-booking-app-design/images/discount.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-h1A.png
+    - assets/resort-booking-app-design/images/group-285-SDe.png
+    - assets/resort-booking-app-design/images/box4-bsE.png
+    - assets/resort-booking-app-design/images/star-5-89e.png
+    - assets/resort-booking-app-design/images/star-2-5ag.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-VAY.png
+    - assets/resort-booking-app-design/images/vector-SrU.png
+    - assets/resort-booking-app-design/images/box2.png
+    - assets/resort-booking-app-design/images/star-3-bLc.png
+    - assets/resort-booking-app-design/images/wifi-BTE.png
+    - assets/resort-booking-app-design/images/star-2-2ik.png
+    - assets/resort-booking-app-design/images/group-268.png
+    - assets/resort-booking-app-design/images/fav-mAY.png
+    - assets/resort-booking-app-design/images/star-1-qgC.png
+    - assets/resort-booking-app-design/images/group-237.png
+    - assets/resort-booking-app-design/images/paolo-nicolello-2goxkj594nm-unsplash-1.png
+    - assets/resort-booking-app-design/images/vector-1jE.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-eYx.png
+    - assets/resort-booking-app-design/images/star-1-z72.png
+    - assets/resort-booking-app-design/images/star-2-Lwa.png
+    - assets/resort-booking-app-design/images/paulo-freitas-teouavfqef4-unsplash-1.png
+    - assets/resort-booking-app-design/images/adult.png
+    - assets/resort-booking-app-design/images/star-1-WTr.png
+    - assets/resort-booking-app-design/images/pool-erC.png
+    - assets/resort-booking-app-design/images/star-4-fWQ.png
+    - assets/resort-booking-app-design/images/vector-bw6.png
+    - assets/resort-booking-app-design/images/paolo-nicolello-2goxkj594nm-unsplash-1-bg.png
+    - assets/resort-booking-app-design/images/group-268-LMe.png
+    - assets/resort-booking-app-design/images/sidath-vimukthi-xzkeqlefdnk-unsplash-1.png
+    - assets/resort-booking-app-design/images/star-4-1Wp.png
+    - assets/resort-booking-app-design/images/group-239-kjJ.png
+    - assets/resort-booking-app-design/images/star-4-ErC.png
+    - assets/resort-booking-app-design/images/star-mr8.png
+    - assets/resort-booking-app-design/images/child.png
+    - assets/resort-booking-app-design/images/pool-nfJ.png
+    - assets/resort-booking-app-design/images/the-anam-twiicisp2s-unsplash-2.png
+    - assets/resort-booking-app-design/images/pool-ATJ.png
+    - assets/resort-booking-app-design/images/the-anam-twiicisp2s-unsplash-1-ThJ.png
+    - assets/resort-booking-app-design/images/ashley-byrd-obuocmvhkec-unsplash-1.png
+    - assets/resort-booking-app-design/images/sidath-vimukthi-xzkeqlefdnk-unsplash-2-bg.png
+    - assets/resort-booking-app-design/images/tugce-acikyurek-yjosnpwylxs-unsplash-1.png
+    - assets/resort-booking-app-design/images/le-tan-toq30nfkfbo-unsplash-1.png
+    - assets/resort-booking-app-design/images/star-3-WtG.png
+    - assets/resort-booking-app-design/images/the-anam-twiicisp2s-unsplash-1-biY.png
+    - assets/resort-booking-app-design/images/pool-LoS.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-d6p.png
+    - assets/resort-booking-app-design/images/group-EaC.png
+    - assets/resort-booking-app-design/images/vector-Yyv.png
+    - assets/resort-booking-app-design/images/star-5-uzG.png
+    - assets/resort-booking-app-design/images/star-4-NXz.png
+    - assets/resort-booking-app-design/images/star-3-FPv.png
+    - assets/resort-booking-app-design/images/star-3-nP2.png
+    - assets/resort-booking-app-design/images/vector-qw6.png
+    - assets/resort-booking-app-design/images/wifi-iUp.png
+    - assets/resort-booking-app-design/images/star-1-6tG.png
+    - assets/resort-booking-app-design/images/star-2-mEg.png
+    - assets/resort-booking-app-design/images/star-5-vKA.png
+    - assets/resort-booking-app-design/images/star-2-1pt.png
+    - assets/resort-booking-app-design/images/vector-GVE.png
+    - assets/resort-booking-app-design/images/sasha-kaunas-67-soi7mvik-unsplash-1-FvG.png
+    - assets/resort-booking-app-design/images/layerx00201-A2t.png
+    - assets/resort-booking-app-design/images/star-3-BKN.png
+    - assets/resort-booking-app-design/images/sasha-kaunas-67-soi7mvik-unsplash-1-DC4.png
+    - assets/resort-booking-app-design/images/iraj-ishtiak-xwlcehbqoz8-unsplash-1-wWQ.png
+    - assets/resort-booking-app-design/images/group-289-M5z.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-PLc.png
+    - assets/resort-booking-app-design/images/ellipse-431.png
+    - assets/resort-booking-app-design/images/vector-PMi.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-ZfW.png
+    - assets/resort-booking-app-design/images/group-329.png
+    - assets/resort-booking-app-design/images/star-5-HdS.png
+    - assets/resort-booking-app-design/images/fav-FAp.png
+    - assets/resort-booking-app-design/images/child-8oS.png
+    - assets/resort-booking-app-design/images/star-1-spc.png
+    - assets/resort-booking-app-design/images/pool-wT6.png
+    - assets/resort-booking-app-design/images/vector-1Ut.png
+    - assets/resort-booking-app-design/images/ellipse-430.png
+    - assets/resort-booking-app-design/images/box4-uPe.png
+    - assets/resort-booking-app-design/images/star-3-Eu6.png
+    - assets/resort-booking-app-design/images/group-ANk.png
+    - assets/resort-booking-app-design/images/vector-UZv.png
+    - assets/resort-booking-app-design/images/location-icon-3ex.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-ZtC.png
+    - assets/resort-booking-app-design/images/group-268-KMa.png
+    - assets/resort-booking-app-design/images/star-4-9tL.png
+    - assets/resort-booking-app-design/images/pool-AV6.png
+    - assets/resort-booking-app-design/images/vector-GHE.png
+    - assets/resort-booking-app-design/images/fav-CT2.png
+    - assets/resort-booking-app-design/images/star-2-GsJ.png
+    - assets/resort-booking-app-design/images/group-239-3Uk.png
+    - assets/resort-booking-app-design/images/fav-j6g.png
+    - assets/resort-booking-app-design/images/vector-HP6.png
+    - assets/resort-booking-app-design/images/ellipse-430-EZE.png
+    - assets/resort-booking-app-design/images/pool-CW4.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-wiY.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-drp.png
+    - assets/resort-booking-app-design/images/vector-nSU.png
+    - assets/resort-booking-app-design/images/star-2-TFW.png
+    - assets/resort-booking-app-design/images/star-1-M5z.png
+    - assets/resort-booking-app-design/images/star-4-464.png
+    - assets/resort-booking-app-design/images/star-vUx.png
+    - assets/resort-booking-app-design/images/group-239-KFN.png
+    - assets/resort-booking-app-design/images/ellipse-430-W64.png
+    - assets/resort-booking-app-design/images/pool-Jak.png
+    - assets/resort-booking-app-design/images/vector-gt8.png
+    - assets/resort-booking-app-design/images/ellipse-431-qeY.png
+    - assets/resort-booking-app-design/images/ellipse-430-zhn.png
+    - assets/resort-booking-app-design/images/star-5-Gic.png
+    - assets/resort-booking-app-design/images/paulo-freitas-teouavfqef4-unsplash-1-zzC.png
+    - assets/resort-booking-app-design/images/star-1-XvG.png
+    - assets/resort-booking-app-design/images/location-icon-Ntx.png
+    - assets/resort-booking-app-design/images/group-239-qnY.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-ExQ.png
+    - assets/resort-booking-app-design/images/paulo-freitas-teouavfqef4-unsplash-1-WvC.png
+    - assets/resort-booking-app-design/images/group-RTn.png
+    - assets/resort-booking-app-design/images/group-268-fBE.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-gUg.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Ktk.png
+    - assets/resort-booking-app-design/images/fav-p96.png
+    - assets/resort-booking-app-design/images/fav-hJQ.png
+    - assets/resort-booking-app-design/images/ellipse-429.png
+    - assets/resort-booking-app-design/images/wifi-B1z.png
+    - assets/resort-booking-app-design/images/child-LgY.png
+    - assets/resort-booking-app-design/images/ellipse-431-ogU.png
+    - assets/resort-booking-app-design/images/wifi-vQY.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-o6Y.png
+    - assets/resort-booking-app-design/images/delete-qbv.png
+    - assets/resort-booking-app-design/images/ellipse-430-cxx.png
+    - assets/resort-booking-app-design/images/star-Ur4.png
+    - assets/resort-booking-app-design/images/ellipse-430-jov.png
+    - assets/resort-booking-app-design/images/vector-L64.png
+    - assets/resort-booking-app-design/images/fav-ptg.png
+    - assets/resort-booking-app-design/images/icon-mangnifyingglass-yWx.png
+    - assets/resort-booking-app-design/images/undrawsweethomedkhr-1.png
+    - assets/resort-booking-app-design/images/vector-um2.png
+    - assets/resort-booking-app-design/images/group-328.png
+    - assets/resort-booking-app-design/images/group-238-caC.png
+    - assets/resort-booking-app-design/images/ellipse-429-oSp.png
+    - assets/resort-booking-app-design/images/ellipse-431-ewa.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Mbn.png
+    - assets/resort-booking-app-design/images/ellipse-431-6vt.png
+    - assets/resort-booking-app-design/images/hair-dryer.png
+    - assets/resort-booking-app-design/images/group-kTS.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-N7a.png
+    - assets/resort-booking-app-design/images/group-tCg.png
+    - assets/resort-booking-app-design/images/icon-microphone-M3v.png
+    - assets/resort-booking-app-design/images/ellipse-431-jrp.png
+    - assets/resort-booking-app-design/images/group-215-5DA.png
+    - assets/resort-booking-app-design/images/delete-ESk.png
+    - assets/resort-booking-app-design/images/group-285-h9i.png
+    - assets/resort-booking-app-design/images/ellipse-431-MbW.png
+    - assets/resort-booking-app-design/images/star-Bbn.png
+    - assets/resort-booking-app-design/images/wifi-TS8.png
+    - assets/resort-booking-app-design/images/group-280-V9S.png
+    - assets/resort-booking-app-design/images/ellipse-430-3Dz.png
+    - assets/resort-booking-app-design/images/group-215-HXe.png
+    - assets/resort-booking-app-design/images/video-FhJ.png
+    - assets/resort-booking-app-design/images/star-iv4.png
+    - assets/resort-booking-app-design/images/ellipse-429-nhE.png
+    - assets/resort-booking-app-design/images/group-239-g5n.png
+    - assets/resort-booking-app-design/images/star-nFA.png
+    - assets/resort-booking-app-design/images/vector-ofn.png
+    - assets/resort-booking-app-design/images/undrawsignupnm4k-1.png
+    - assets/resort-booking-app-design/images/box2-xhv.png
+    - assets/resort-booking-app-design/images/group-DXN.png
+    - assets/resort-booking-app-design/images/group-238-Lp8.png
+    - assets/resort-booking-app-design/images/group-KHJ.png
+    - assets/resort-booking-app-design/images/fav-jNp.png
+    - assets/resort-booking-app-design/images/pool-zjz.png
+    - assets/resort-booking-app-design/images/group-326.png
+    - assets/resort-booking-app-design/images/vector-M3E.png
+    - assets/resort-booking-app-design/images/refrigerator-1.png
+    - assets/resort-booking-app-design/images/group-239-PDz.png
+    - assets/resort-booking-app-design/images/box1-kVn.png
+    - assets/resort-booking-app-design/images/box3-97E.png
+    - assets/resort-booking-app-design/images/beer-glass-1.png
+    - assets/resort-booking-app-design/images/ellipse-430-6Ek.png
+    - assets/resort-booking-app-design/images/undrawnotelistrer4u9-1.png
+    - assets/resort-booking-app-design/images/group-238-MRa.png
+    - assets/resort-booking-app-design/images/group-MQt.png
+    - assets/resort-booking-app-design/images/group-278-ZNQ.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-sdJ.png
+    - assets/resort-booking-app-design/images/star-2-FdA.png
+    - assets/resort-booking-app-design/images/star-3-eqe.png
+    - assets/resort-booking-app-design/images/adult-92G.png
+    - assets/resort-booking-app-design/images/food-33e.png
+    - assets/resort-booking-app-design/images/percentage-Evk.png
+    - assets/resort-booking-app-design/images/ellipse-430-yFv.png
+    - assets/resort-booking-app-design/images/star-4-tDn.png
+    - assets/resort-booking-app-design/images/discount-MVz.png
+    - assets/resort-booking-app-design/images/group-309.png
+    - assets/resort-booking-app-design/images/group-282-3jW.png
+    - assets/resort-booking-app-design/images/ellipse-431-xSU.png
+    - assets/resort-booking-app-design/images/fav-BoW.png
+    - assets/resort-booking-app-design/images/fav-DVA.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-CSt.png
+    - assets/resort-booking-app-design/images/group-305.png
+    - assets/resort-booking-app-design/images/undrawsearchingre3ra9-1.png
+    - assets/resort-booking-app-design/images/group-284-pBi.png
+    - assets/resort-booking-app-design/images/group-250.png
+    - assets/resort-booking-app-design/images/group-238-1V2.png
+    - assets/resort-booking-app-design/images/ellipse-429-ah6.png
+    - assets/resort-booking-app-design/images/ellipse-430-L9N.png
+    - assets/resort-booking-app-design/images/food-gz4.png
+    - assets/resort-booking-app-design/images/group-319.png
+    - assets/resort-booking-app-design/images/undrawauthenticationresvpt-1.png
+    - assets/resort-booking-app-design/images/ellipse-431-31r.png
+    - assets/resort-booking-app-design/images/layer-2.png
+    - assets/resort-booking-app-design/images/paytm-kv4.png
+    - assets/resort-booking-app-design/images/star-TpL.png
+    - assets/resort-booking-app-design/images/star-MBN.png
+    - assets/resort-booking-app-design/images/fav-19i.png
+    - assets/resort-booking-app-design/images/star-Kgk.png
+    - assets/resort-booking-app-design/images/ellipse-430-k5v.png
+    - assets/resort-booking-app-design/images/zero-take-wvhrrr1c5po-unsplash-1-M1J.png
+    - assets/resort-booking-app-design/images/star-5-Y1e.png
+    - assets/resort-booking-app-design/images/pool-Lv4.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-rec.png
+    - assets/resort-booking-app-design/images/icon-microphone-VQc.png
+    - assets/resort-booking-app-design/images/pool-AQG.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-K2G.png
+    - assets/resort-booking-app-design/images/group-239-sZa.png
+    - assets/resort-booking-app-design/images/fav-3DA.png
+    - assets/resort-booking-app-design/images/main.png
+    - assets/resort-booking-app-design/images/ellipse-431-aoJ.png
+    - assets/resort-booking-app-design/images/ellipse-431-dDi.png
+    - assets/resort-booking-app-design/images/vector-CX2.png
+    - assets/resort-booking-app-design/images/wifi-sma.png
+    - assets/resort-booking-app-design/images/shadow-bg.png
+    - assets/resort-booking-app-design/images/shadow-bg-BpL.png
+    - assets/resort-booking-app-design/images/screen-4-1.png
+    - assets/resort-booking-app-design/images/shadow-bg-BXW.png
+    - assets/resort-booking-app-design/images/star-mV2.png
+    - assets/resort-booking-app-design/images/fav-ySx.png
+    - assets/resort-booking-app-design/images/star-Rb6.png
+    - assets/resort-booking-app-design/images/vector-ZHJ.png
+    - assets/resort-booking-app-design/images/box4-oL4.png
+    - assets/resort-booking-app-design/images/shadow-bg-Y7r.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-NTa.png
+    - assets/resort-booking-app-design/images/shadow-bg-M5J.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label.png
+    - assets/resort-booking-app-design/images/group-268-ek8.png
+    - assets/resort-booking-app-design/images/iraj-ishtiak-xwlcehbqoz8-unsplash-1-njr.png
+    - assets/resort-booking-app-design/images/main-LFa.png
+    - assets/resort-booking-app-design/images/main-Sp8.png
+    - assets/resort-booking-app-design/images/main-Y1v.png
+    - assets/resort-booking-app-design/images/main-Tua.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-zec.png
+    - assets/resort-booking-app-design/images/shadow-bg-48g.png
+    - assets/resort-booking-app-design/images/dave-hoefler-ufnht94r91w-unsplash-1-MhA.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-tFa.png
+    - assets/resort-booking-app-design/images/screen-18-1.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-tBz.png
+    - assets/resort-booking-app-design/images/screen-20-1.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-nME.png
+    - assets/resort-booking-app-design/images/shadow-bg-s7n.png
+    - assets/resort-booking-app-design/images/shadow-bg-Q7i.png
+    - assets/resort-booking-app-design/images/shadow-bg-jfn.png
+    - assets/resort-booking-app-design/images/main-5Ke.png
+    - assets/resort-booking-app-design/images/screen-22-1.png
+    - assets/resort-booking-app-design/images/screen-8-1.png
+    - assets/resort-booking-app-design/images/tugce-acikyurek-yjosnpwylxs-unsplash-1-v5v.png
+    - assets/resort-booking-app-design/images/main-uKe.png
+    - assets/resort-booking-app-design/images/shadow-bg-1di.png
+    - assets/resort-booking-app-design/images/screen-1.png
+    - assets/resort-booking-app-design/images/main-uMr.png
+    - assets/resort-booking-app-design/images/main-YBz.png
+    - assets/resort-booking-app-design/images/screen-26-1.png
+    - assets/resort-booking-app-design/images/jake-hills-kcwq4cqxiyw-unsplash-1-bg.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-P6G.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-3qz.png
+    - assets/resort-booking-app-design/images/screen-12-1.png
+    - assets/resort-booking-app-design/images/screen-33-1.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-wMS.png
+    - assets/resort-booking-app-design/images/sasha-kaunas-67-soi7mvik-unsplash-1-VnG.png
+    - assets/resort-booking-app-design/images/screen-17-1.png
+    - assets/resort-booking-app-design/images/main-E7a.png
+    - assets/resort-booking-app-design/images/shadow-bg-Z9r.png
+    - assets/resort-booking-app-design/images/screen-30-1.png
+    - assets/resort-booking-app-design/images/shadow-bg-SjS.png
+    - assets/resort-booking-app-design/images/screen-36-1.png
+    - assets/resort-booking-app-design/images/screen-7-1.png
+    - assets/resort-booking-app-design/images/main-pEC.png
+    - assets/resort-booking-app-design/images/shadow-bg-Yfz.png
+    - assets/resort-booking-app-design/images/jake-hills-kcwq4cqxiyw-unsplash-1-bg-F1a.png
+    - assets/resort-booking-app-design/images/datingscout-jtumzxloqhq-unsplash-2-FbE.png
+    - assets/resort-booking-app-design/images/le-tan-toq30nfkfbo-unsplash-1-L6t.png
+    - assets/resort-booking-app-design/images/screen-11-1.png
+    - assets/resort-booking-app-design/images/datingscout-jtumzxloqhq-unsplash-1-fua.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-EEC.png
+    - assets/resort-booking-app-design/images/main-Qrk.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-VtC.png
+    - assets/resort-booking-app-design/images/artie-kostenko-a6ezvpjxfby-unsplash-1-bg-S2k.png
+    - assets/resort-booking-app-design/images/shadow-bg-9dr.png
+    - assets/resort-booking-app-design/images/shadow-bg-roA.png
+    - assets/resort-booking-app-design/images/main-HhS.png
+    - assets/resort-booking-app-design/images/screen-25-1.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-jWp.png
+    - assets/resort-booking-app-design/images/screen-6-1.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-VJx.png
+    - assets/resort-booking-app-design/images/main-ehe.png
+    - assets/resort-booking-app-design/images/screen-10-1.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-v6k.png
+    - assets/resort-booking-app-design/images/main-SYG.png
+    - assets/resort-booking-app-design/images/paolo-nicolello-2goxkj594nm-unsplash-1-TaY.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-oXv.png
+    - assets/resort-booking-app-design/images/paulo-freitas-teouavfqef4-unsplash-1-gFA.png
+    - assets/resort-booking-app-design/images/screen-2-7.png
+    - assets/resort-booking-app-design/images/screen-3-7.png
+    - assets/resort-booking-app-design/images/group-3284.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Dx4.png
+    - assets/resort-booking-app-design/images/screen-1-9.png
+    - assets/resort-booking-app-design/images/path-939.png
+    - assets/resort-booking-app-design/images/group-3282.png
+    - assets/resort-booking-app-design/images/ashley-byrd-obuocmvhkec-unsplash-1-nUx.png
+    - assets/resort-booking-app-design/images/frame-3388.png
+    - assets/resort-booking-app-design/images/sidath-vimukthi-xzkeqlefdnk-unsplash-1-PBW.png
+    - assets/resort-booking-app-design/images/group-3309.png
+    - assets/resort-booking-app-design/images/frame-3400.png
+    - assets/resort-booking-app-design/images/group-3284-H9S.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-stL.png
+    - assets/resort-booking-app-design/images/group-3309-M9A.png
+    - assets/resort-booking-app-design/images/down.png
+    - assets/resort-booking-app-design/images/group-3315.png
+    - assets/resort-booking-app-design/images/down-k9e.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-phn.png
+    - assets/resort-booking-app-design/images/group-3311.png
+    - assets/resort-booking-app-design/images/group-3381.png
+    - assets/resort-booking-app-design/images/group-3380.png
+    - assets/resort-booking-app-design/images/path-939-o8c.png
+    - assets/resort-booking-app-design/images/theo-dorp-4tysmnml60-unsplash-1.png
+    - assets/resort-booking-app-design/images/down-Hp4.png
+    - assets/resort-booking-app-design/images/maxim-hopman-16na5rddrk-unsplash-1-bg.png
+    - assets/resort-booking-app-design/images/iphone-12-pro-mockup-front-view-label-knL.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Fyz.png
+    - assets/resort-booking-app-design/images/group-3282-N4x.png
+    - assets/resort-booking-app-design/images/maxim-hopman-16na5rddrk-unsplash-1-bg-ms6.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-4QY.png
+    - assets/resort-booking-app-design/images/cory-bjork-d1yt791nf9a-unsplash-1-JTr.png
+    - assets/resort-booking-app-design/images/group-3315-esz.png
+    - assets/resort-booking-app-design/images/the-anam-twiicisp2s-unsplash-1-Xuz.png
+    - assets/resort-booking-app-design/images/sidath-vimukthi-xzkeqlefdnk-unsplash-2-bg-JUY.png
+    - assets/resort-booking-app-design/images/wifi-SkY.png
+    - assets/resort-booking-app-design/images/down-nmn.png
+    - assets/resort-booking-app-design/images/the-anam-twiicisp2s-unsplash-2-J64.png
+    - assets/resort-booking-app-design/images/down-1pL.png
+    - assets/resort-booking-app-design/images/auto-group-akcj.png
+    - assets/resort-booking-app-design/images/down-Bkk.png
+    - assets/resort-booking-app-design/images/fabio-fistarol-qaiclhyq0s-unsplash-1-Q2L.png
+    - assets/resort-booking-app-design/images/battery.png
+    - assets/resort-booking-app-design/images/left-side.png
+    - assets/resort-booking-app-design/images/down-Wmn.png
+    - assets/resort-booking-app-design/images/down-7hJ.png
+    - assets/resort-booking-app-design/images/down-sHJ.png
+    - assets/resort-booking-app-design/images/down-Beg.png
+    - assets/resort-booking-app-design/images/battery-7Hr.png
+    - assets/resort-booking-app-design/images/auto-group-iwuf.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-Qik.png
+    - assets/resort-booking-app-design/images/left-side-Mfv.png
+    - assets/resort-booking-app-design/images/wifi-n8Y.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-AD6.png
+    - assets/resort-booking-app-design/images/down-Z1r.png
+    - assets/resort-booking-app-design/images/auto-group-76hm.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-aZn.png
+    - assets/resort-booking-app-design/images/down-cSc.png
+    - assets/resort-booking-app-design/images/group-3315-pVv.png
+    - assets/resort-booking-app-design/images/down-2Tr.png
+    - assets/resort-booking-app-design/images/down-DvQ.png
+    - assets/resort-booking-app-design/images/group-3376.png
+    - assets/resort-booking-app-design/images/vector-TzG.png
+    - assets/resort-booking-app-design/images/auto-group-jmvx.png
+    - assets/resort-booking-app-design/images/group-3372.png
+    - assets/resort-booking-app-design/images/camera-1-1.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-ynQ.png
+    - assets/resort-booking-app-design/images/down-qck.png
+    - assets/resort-booking-app-design/images/group-3315-dt4.png
+    - assets/resort-booking-app-design/images/down-oMz.png
+    - assets/resort-booking-app-design/images/component-4.png
+    - assets/resort-booking-app-design/images/component-3.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-6WL.png
+    - assets/resort-booking-app-design/images/group-3315-xHW.png
+    - assets/resort-booking-app-design/images/component-5.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-K28.png
+    - assets/resort-booking-app-design/images/rectangle-18240.png
+    - assets/resort-booking-app-design/images/component-1.png
+    - assets/resort-booking-app-design/images/component-2.png
+    - assets/resort-booking-app-design/images/icon-chevronleft-N6L.png
+    - assets/resort-booking-app-design/images/vector-kME.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-cVE.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-PEQ.png
+    - assets/resort-booking-app-design/images/group-3311-rMN.png
+    - assets/resort-booking-app-design/images/group-3314.png
+    - assets/resort-booking-app-design/images/group-3315-FHz.png
+    - assets/resort-booking-app-design/images/vector-Ev4.png
+    - assets/resort-booking-app-design/images/group-3311-mKe.png
+    - assets/resort-booking-app-design/images/group-3315-3SG.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-UZn.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-VEx.png
+    - assets/resort-booking-app-design/images/theo-dorp-4tysmnml60-unsplash-1-1Kn.png
+    - assets/resort-booking-app-design/images/group-3314-5mS.png
+    - assets/resort-booking-app-design/images/vector-GKJ.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-WjA.png
+    - assets/resort-booking-app-design/images/iphone-x-or-newer-XLk.png
+    - assets/resort-booking-app-design/images/theo-dorp-4tysmnml60-unsplash-1-ZQc.png
+    - assets/resort-booking-app-design/images/group-3314-hdr.png
+    - assets/resort-booking-app-design/images/group-3315-apQ.png
+    - assets/resort-booking-app-design/images/group-3311-wiY.png
+    - assets/resort-booking-app-design/images/down-T2x.png
+    - assets/resort-booking-app-design/images/down-Kw6.png
+    - assets/resort-booking-app-design/images/auto-group-yk6f.png
+    - assets/resort-booking-app-design/images/auto-group-bayd.png
+    - assets/resort-booking-app-design/images/stefan-kunze-qnh5spvcxbk-unsplash-1.png
+    - assets/resort-booking-app-design/images/tipper-dump-truck-isolated-1-bg.png
+    - assets/resort-booking-app-design/images/tipper-dump-truck-isolated-1-bg-E56.png
+    - assets/resort-booking-app-design/images/down-a3z.png
+    - assets/resort-booking-app-design/images/auto-group-mm99.png
+    - assets/resort-booking-app-design/images/auto-group-ufb5.png
+    - assets/resort-booking-app-design/images/group-3315-jip.png
+    - assets/resort-booking-app-design/images/image-2.png
+    - assets/resort-booking-app-design/images/group-3314-qNQ.png
+    - assets/resort-booking-app-design/images/down-sap.png
+    - assets/resort-booking-app-design/images/image-3.png
+    - assets/resort-booking-app-design/images/image-4.png
+    - assets/resort-booking-app-design/images/vector-51J.png
+    - assets/resort-booking-app-design/images/down-E8G.png
+    - assets/resort-booking-app-design/images/down-9Pn.png
+    - assets/resort-booking-app-design/images/auto-group-r9ao.png
+    - assets/resort-booking-app-design/images/tipper-dump-truck-isolated-1-bg-qVJ.png
+    - assets/resort-booking-app-design/images/tipper-dump-truck-isolated-1-bg-y2G.png
+    - assets/resort-booking-app-design/images/tipper-dump-truck-isolated-1-bg-5y2.png
+    - assets/resort-booking-app-design/images/group-3353.png
+    - assets/resort-booking-app-design/images/man-working-in-office-1.png
+    - assets/resort-booking-app-design/images/group-3356.png
+    - assets/resort-booking-app-design/images/rectangle-18235.png
+    - assets/resort-booking-app-design/images/ellipse-442.png
+    - assets/resort-booking-app-design/images/group-3351.png
+    - assets/resort-booking-app-design/images/group-3355.png
+    - assets/resort-booking-app-design/images/epicdummysidelogo-02-1.png
+    - assets/resort-booking-app-design/images/group-3354.png
+    - assets/resort-booking-app-design/images/group-3352.png
+    - assets/resort-booking-app-design/images/vector-eHn.png
+    - assets/resort-booking-app-design/images/group-3358.png
+    - assets/resort-booking-app-design/images/group-3357.png
+    - assets/resort-booking-app-design/images/ellipse-432.png
+    - assets/resort-booking-app-design/images/rectangle-18235-Qhn.png
+    - assets/resort-booking-app-design/images/group-3351-grk.png
+    - assets/resort-booking-app-design/images/pc4duw-631-1.png
+    - assets/resort-booking-app-design/images/ellipse-432-aSk.png
+    - assets/resort-booking-app-design/images/group-3353-arU.png
+    - assets/resort-booking-app-design/images/man-working-in-office-1-g8Y.png
+    - assets/resort-booking-app-design/images/pc4duw-631-1-xoA.png
+    - assets/sign-in-sign-up/images/iphone-x-or-newer-VVi.png
+    - assets/resort-booking-app-design/images/frame-3383.png
+    - assets/resort-booking-app-design/images/property-1variant2.png
+    - assets/resort-booking-app-design/images/frame-3383-TwN.png
+    - assets/resort-booking-app-design/images/group-3357-LZE.png
+    - assets/resort-booking-app-design/images/group-3356-s1z.png
+    - assets/sign-in-sign-up/images/iphone-x-or-newer-CDv.png
+    - assets/resort-booking-app-design/images/vector-8dN.png
+    - assets/resort-booking-app-design/images/property-1default.png
+    - assets/resort-booking-app-design/images/frame-3400-g5v.png
+    - assets/resort-booking-app-design/images/ellipse-433.png
+    - assets/resort-booking-app-design/images/property-1default-PnG.png
+    - assets/resort-booking-app-design/images/frame-3388-R2Y.png
+    - assets/resort-booking-app-design/images/image-5.png
+    - assets/resort-booking-app-design/images/group-3355-d4t.png
+    - assets/sign-in-sign-up/images/group-215-8qW.png
+    - assets/resort-booking-app-design/images/ellipse-442-ExQ.png
+    - assets/resort-booking-app-design/images/group-3352-JyW.png
+    - assets/resort-booking-app-design/images/group-3354-fGt.png
+    - assets/resort-booking-app-design/images/epicdummysidelogo-02-1-HUL.png
+    - assets/resort-booking-app-design/images/property-1variant2-yG4.png
+    - assets/resort-booking-app-design/images/frame-3400-ufE.png
+    - assets/resort-booking-app-design/images/frame-3388-JTr.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
