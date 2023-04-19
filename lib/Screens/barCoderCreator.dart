@@ -49,21 +49,29 @@ class _barCodeCreateState extends State<barCodeCreate> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.8,
-                child: MaterialButton(
-                  color: Color(0xff8c897f),
-                  onPressed: () {},
-                  child: Text(
-                    "Add Comment",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-              ),
+             SizedBox(height: 20),
+Container(
+         width: MediaQuery.of(context).size.width * 0.8,
+        child: MaterialButton(
+           color: Color(0xff8c897f),
+           onPressed: () {
+           // Perform comment addition logic here
+             ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+               content: Text('Comment added successfully!'),
+              duration: Duration(seconds: 10),
+        ),
+      );
+    },
+              child: Text(
+             "Add Comment",
+              style: TextStyle(
+              color: Colors.white,
+            fontSize: 20,
+      ),
+    ),
+  ),
+),
               SizedBox(height: 20),
               Container(
                 width: MediaQuery.of(context).size.width * 0.8,
