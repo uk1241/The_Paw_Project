@@ -48,6 +48,7 @@ dependencies:
   barcode_scan: ^3.0.1
   firebase_auth: ^4.3.0
   firebase_core: ^2.8.0
+  flutter_qr_bar_scanner: ^3.0.2
 
 dev_dependencies:
   flutter_test:

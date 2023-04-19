@@ -46,89 +46,75 @@ class _SignUpState extends State<SignUp> {
     return user;
   }
 
-  @override
+ @override
   Widget build(BuildContext context) {
-    var baseWidth = 375;
-    double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
-
     return Scaffold(
-      body: Container(
-        width: double.infinity,
+      body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: Color(0xffffffff),
+            padding: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width * 0.1,
+              vertical: 24,
             ),
-            padding: EdgeInsets.symmetric(horizontal: 24 * fem),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: 75 * fem),
+                SizedBox(height: 75),
                 Text(
                   'The Paw Project',
-                  style: SafeGoogleFont(
-                    'Franklin Gothic Medium Cond',
-                    fontSize: 30 * ffem,
+                  style: TextStyle(
+                    fontSize: 30,
                     fontWeight: FontWeight.w400,
-                    height: 0.7333333333 * ffem / fem,
                     color: Color(0xff000000),
                   ),
                 ),
-                SizedBox(height: 32 * fem),
+                SizedBox(height: 32),
                 Container(
                   decoration: BoxDecoration(
                     color: Color(0xffdee1e3),
-                    borderRadius: BorderRadius.circular(4 * fem),
+                    borderRadius: BorderRadius.circular(4),
                   ),
                   child: TextField(
                     controller: _emailcontroller,
                     decoration: InputDecoration(
                       labelText: 'Type Your Email',
-                      labelStyle: SafeGoogleFont(
-                        'Outfit',
-                        fontSize: 16 * ffem,
+                      labelStyle: TextStyle(
+                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                         color: Color(0xff8c897f),
                       ),
                       border: InputBorder.none,
-                      contentPadding: EdgeInsets.fromLTRB(
-                        18.5 * fem,
-                        15 * fem,
-                        18.5 * fem,
-                        12 * fem,
+                      contentPadding: EdgeInsets.symmetric(
+                        horizontal: 18.5,
+                        vertical: 15,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(height: 16 * fem),
+                SizedBox(height: 16),
                 Container(
                   decoration: BoxDecoration(
                     color: Color(0xffdee1e3),
-                    borderRadius: BorderRadius.circular(4 * fem),
+                    borderRadius: BorderRadius.circular(4),
                   ),
                   child: TextField(
                     controller: _passwordcontroller,
                     decoration: InputDecoration(
                       labelText: 'Type Your Password',
-                      labelStyle: SafeGoogleFont(
-                        'Outfit',
-                        fontSize: 16 * ffem,
+                      labelStyle: TextStyle(
+                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                         color: Color(0xff8c897f),
                       ),
                       border: InputBorder.none,
-                      contentPadding: EdgeInsets.fromLTRB(
-                        18.5 * fem,
-                        15 * fem,
-                        18.5 * fem,
-                        12 * fem,
+                      contentPadding: EdgeInsets.symmetric(
+                        horizontal: 18.5,
+                        vertical: 15,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(height: 115 * fem),
+                SizedBox(height: 48),
                 GestureDetector(
                   onTap: () async {
                     Navigator.push(
@@ -138,17 +124,17 @@ class _SignUpState extends State<SignUp> {
                   },
                   child: Container(
                     width: double.infinity,
-                    height: 42 * fem,
+                    height: 42,
                     decoration: BoxDecoration(
                       color: Color(0xff225b99),
-                      borderRadius: BorderRadius.circular(8 * fem),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
                       child: Text(
                         'SIGN IN',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 16 * ffem,
+                          fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),
                       ),

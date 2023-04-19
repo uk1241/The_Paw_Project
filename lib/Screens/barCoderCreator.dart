@@ -46,7 +46,7 @@ class _barCodeCreateState extends State<barCodeCreate> {
                     hintText: 'Add comment',
                     border: OutlineInputBorder(),
                     contentPadding: EdgeInsets.symmetric(vertical: 15),
-                    
+
                   ),
                 ),
               ),
@@ -102,7 +102,7 @@ Container(
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => QrGeneratorPage()),
+                          builder: (context) => Second()),
                     );
                   },
                   child: Text(
