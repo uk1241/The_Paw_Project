@@ -51,7 +51,7 @@ class NewWidget extends StatelessWidget {
           future: widget._initializeFirebase(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
-              return barCodeCreate();
+              return SignUp();
             }
             return const Center(
               child: CircularProgressIndicator(),

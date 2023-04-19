@@ -14,97 +14,109 @@ class _barCodeCreateState extends State<barCodeCreate> {
   TextEditingController title = TextEditingController();
   TextEditingController content = TextEditingController();
   var code = '';
-  // File? file;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xff8c897f), // Set the app bar background color
+        title: Row(
+          children: [
+            Image.network(
+              // Load the logo from a URL
+              'https://c8.alamy.com/comp/2BE8T97/veterinary-logo-design-on-pets-animal-pet-logo-cat-and-dog-vector-illustration-2BE8T97.jpg',
+              height: 30,
+            ),
+            SizedBox(width: 10),
+            Text('Paw Project'), // Set the app bar title
+          ],
+        ),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
             children: [
-
-              Padding(
-                padding: EdgeInsets.all(35),
+              SizedBox(height: 50),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: TextFormField(
+                  controller: title,
+                  textAlign: TextAlign.center,
+                  decoration: InputDecoration(
+                    hintText: 'Add comment',
+                    border: OutlineInputBorder(),
+                    contentPadding: EdgeInsets.symmetric(vertical: 15),
+                  ),
+                ),
               ),
-              Padding(
-                padding: EdgeInsets.all(35),
-                child: Container(
-                  decoration: BoxDecoration(border: Border.all()),
-                  child: TextFormField(
-                    controller: title,
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      hintText: ' Add comment ',
+              SizedBox(height: 20),
+              Container(
+                width: MediaQuery.of(context).size.width * 0.8,
+                child: MaterialButton(
+                  color: Color(0xff8c897f),
+                  onPressed: () {},
+                  child: Text(
+                    "Add Comment",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
                     ),
                   ),
                 ),
               ),
-              MaterialButton(
-                color: Color(0xff8c897f),
-                onPressed: () {
-                  // setState(() {
-                  //   code = title.text;
-                  // });
-                },
-                child: Text(
-                  "Add Comment",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
+              SizedBox(height: 20),
+              Container(
+                width: MediaQuery.of(context).size.width * 0.8,
+                child: MaterialButton(
+                  color: Color(0xff8c897f),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HospitalPage()),
+                    );
+                  },
+                  child: Text(
+                    "Created List",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),
-
-
-              //button2 
-               MaterialButton(
-                color: Color(0xff8c897f),
-                onPressed: () {
-                  Navigator.push(
-  context,
-  MaterialPageRoute(builder: (context) => HospitalPage()),
-);
-
-                },
-                child: Text(
-                  "created list",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
+              SizedBox(height: 20),
+              Container(
+                width: MediaQuery.of(context).size.width * 0.8,
+                child: MaterialButton(
+                  color: Color(0xff8c897f),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => QrGeneratorPage()),
+                    );
+                  },
+                  child: Text(
+                    "Scanner",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),
-
-
-
-
-              //button 3
-               MaterialButton(
-                color: Color(0xff8c897f),
-                onPressed: () {
-                  Navigator.push(
-  context,
-  MaterialPageRoute(builder: (context) => QrGeneratorPage()),
-);
-                },
+              SizedBox(height: 50),
+              Container(
+                alignment: Alignment.bottomCenter,
+                padding: EdgeInsets.only(bottom: 10),
                 child: Text(
-                  "Scanner",
+                  "The Paw Project & Co",
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
+                    color: Colors.grey,
+                    fontSize: 16,
                   ),
                 ),
               ),
-              // code == ''
-              //     ? Text('')
-              //     : BarcodeWidget(
-              //   barcode: Barcode.qrCode(
-              //     errorCorrectLevel: BarcodeQRCorrectionLevel.high,
-              //   ),
-              //   data: '$code',
-              //   width: 200,
-              //   height: 200,
-              // ),
             ],
           ),
         ),
