@@ -46,6 +46,7 @@ class _barCodeCreateState extends State<barCodeCreate> {
                     hintText: 'Add comment',
                     border: OutlineInputBorder(),
                     contentPadding: EdgeInsets.symmetric(vertical: 15),
+                    
                   ),
                 ),
               ),
@@ -59,15 +60,15 @@ Container(
              ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                content: Text('Comment added successfully!'),
-              duration: Duration(seconds: 10),
+              duration: Duration(seconds: 2),
         ),
       );
     },
-              child: Text(
+            child: Text(
              "Add Comment",
               style: TextStyle(
-              color: Colors.white,
-            fontSize: 20,
+        color: Colors.white,
+        fontSize: 20,
       ),
     ),
   ),
